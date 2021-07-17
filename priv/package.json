@@ -4,10 +4,10 @@
   "private": true,
   "dependencies": {
     "@ampproject/rollup-plugin-closure-compiler": "0.26.0",
-    "@rollup/plugin-commonjs": "^19.0.0",
-    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-commonjs": "^19.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.2",
     "coffeescript": "Youimmi/coffeescript",
-    "rollup": "^2.48.0",
+    "rollup": "^2.53.2",
     "rollup-plugin-coffee-script": "Youimmi/rollup-plugin-coffee-script",
     "rollup-plugin-terser": "Youimmi/rollup-plugin-terser"
   },
