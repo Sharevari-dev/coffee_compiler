@@ -1,6 +1,8 @@
 # Ignore yarn artifacts
 .yarn/*
-!.pnp.js
 !.yarn/cache
+!.yarn/patches
+!.yarn/plugins
 !.yarn/releases
-!.yarnrc.yml
+!.yarn/sdks
+!.yarn/versions

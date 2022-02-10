@@ -36,7 +36,6 @@ defmodule CoffeeCompiler.MixProject do
         "README.md",
         "lib",
         "mix.exs",
-        "priv/.pnp.js",
         "priv/.yarn/releases",
         "priv/.yarnrc.yml",
         "priv/package.json",
@@ -51,9 +50,9 @@ defmodule CoffeeCompiler.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
+      {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.1", only: :dev, runtime: false},
-      {:ex_doc, "~> 0.24", only: :dev, runtime: false}
+      {:ex_doc, "~> 0.28", only: :dev, runtime: false}
     ]
   end
 
@@ -65,7 +64,7 @@ defmodule CoffeeCompiler.MixProject do
   # See the documentation for `Mix` for more info on aliases.
   defp aliases do
     [
-      update: [
+      upgrade: [
         "cmd rm -rf _build deps mix.lock priv/.pnp.js priv/.yarn* priv/yarn.lock",
         "deps.get",
         "cmd cd priv && yarn set version berry && yarn set version latest",
